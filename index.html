@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CatDog - online pet shop</title>
+    <meta name="description" content="pet shop where you can buy trendy clothes and furniture for your cat or dog. Here you will have access to all our old and new products">
+    <meta name="author" content="mai.pages5@gmail.com">
+    <meta name="keywords" content="cat, dog, style, furniture, clothes, trendy, cute, tree, bed, house">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css-boots/bootstrap.css">
+    <!--Animate.css-->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!--Css llightbox-->
+    <link rel="stylesheet" href="./css-lb/lightbox.css">
+    <!--Mi css-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <!--Acá va a ir un search, el canasto de compra y el tipo de moneda-->
+    <div class="blackBackground d-flex justify-content-between" id="firstBar">
+        <form action="nose.php" method="GET" class="ms-3 d-flex align-items-center">
+            <input type="text" name="search" placeholder=" search" class="borderRadius me-1">
+            <select name="currency" class="borderRadius">
+                <option value="usd">USD</option>
+                <option value="ars">ARS</option>
+            </select>
+        </form>
+        <button type="button" class="me-5 cartButton">
+            <img src="./media/fotos/cart-icon.png" alt="cart icon" width="50">
+        </button>
+    </div>
+    <!--Botonera. La separo con lineas para diferenciarla del resto del contenido-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid d-flex flex-column">
+            <div>
+                <a id="logoHome" class="navbar-brand animate__animated animate__bounce" href="./index.html">
+                    <img src="media/fotos/logo.png" alt="logo de CatDog" width="120">
+                </a>
+            </div>
+            <button class="navbar-toggler position-absolute top-25 end-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 boldLetters">
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/about.html">About</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./secciones/forcats.html">For Cats</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/fordogs.html">For Dogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/FAQ.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./secciones/contactus.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+    </nav>
+    <!--Encabezado de la pagina con video de presentación-->
+    <Header class="headerHome">
+        <video src="./media/videos/catfurniture.mp4" autoplay muted loop preload="auto" width=1200 class="borderRadius headerHome__video"></video>
+    </Header>
+    <!--Sección principal del home-->
+    <section class="sectionHome">
+        <div class="d-flex justify-content-center">
+            <article class="articleHome">
+                <h1 class="textCenter articleHome__heading">Hi, we are CatDog!</h1>
+                <p class="textCenter">Here we love joy, style and design, so if you are looking for your pet to be comfortable and have fun while your house looks great, you are in the right place! </p>
+                <p class="textCenter">We offer you a wide range of pet furniture and toys, and also some trendy pet clothing. Feel free to take a look and choose what suits your pet.</p>
+            </article>
+        </div>
+        <div class="picturesSection">
+            <div class="prodBack">
+                <a href="./media/fotos/three-floor-cat-tree.jpg" data-lightbox="roadtrip">
+                    <img src="./media/fotos/three-floor-cat-tree.jpg" alt="Three floor cat tree" width="400" class="marginBottomStandard scaleImage picturesSection__img">
+                </a>
+                <p class="lightLetters bigProdLetters">Three floor cat tree</p>
+                <p>usd 120</p>
+            </div>
+            <div class="prodBack">
+                <a href="./media/fotos/green-dog-jacket.jpeg" data-lightbox="roadtrip">
+                    <img src="./media/fotos/green-dog-jacket.jpeg" alt="Green dog jacket" width="400" class="marginBottomStandard scaleImage picturesSection__img">
+                </a>
+                <p class="lightLetters bigProdLetters">Green dog jacket</p>
+                <p>usd 90</p>
+            </div>
+            <div class="prodBack">
+                <a href="./media/fotos/Funny-Banana-Cat-Bed.jpg" data-lightbox="roadtrip">
+                    <img src="./media/fotos/Funny-Banana-Cat-Bed.jpg" alt="Banana cat bed" width="400" class="marginBottomStandard scaleImage picturesSection__img">
+                </a>
+                <p class="lightLetters bigProdLetters">Banana cat bed</p>
+                <p>usd 80</p>
+            </div>
+            <div class="prodBack">
+                <a href="./media/fotos/little-cat-tree.jpg" data-lightbox="roadtrip">
+                    <img src="./media/fotos/little-cat-tree.jpg" alt="Little cat tree" width="400" class="marginBottomStandard scaleImage picturesSection__img">
+                </a>
+                <p class="lightLetters bigProdLetters">Little cat tree</p>
+                <p>usd 100</p>
+            </div>
+            <div class="prodBack">
+                <a href="./media/fotos/dog-pyjama.jpg" data-lightbox="roadtrip">
+                    <img src="./media/fotos/dog-pyjama.jpg" alt="Strawberries dog pyjama" width="400" class="marginBottomStandard scaleImage picturesSection__img">
+                </a>
+                <p class="lightLetters bigProdLetters">Star dog pyjama</p>
+                <p>usd 70</p>
+            </div>
+            <div class="prodBack">
+                <a href="./media/fotos/Tower-Cat-Tree.webp" data-lightbox="roadtrip">
+                    <img src="./media/fotos/Tower-Cat-Tree.webp" alt="Tower cat tree" width="400" class="marginBottomStandard scaleImage picturesSection__img">
+                </a>
+                <p class="lightLetters bigProdLetters">Tower cat tree</p>
+                <p>usd 120</p>
+            </div>
+        </div>  
+    </section>
+    <!--pie de página con logos de redes sociales-->
+    <footer>
+        <img src="media/fotos/logo.png" alt="logo de CatDog" width="120">
+        <div>
+            <p class="pt-3">Social Media</p>
+            <ul>
+                <li>
+                    <a>
+                        <img src="media/redes sociales/social-facebook-box-blue-icon.png" alt="Facebook">
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="media/redes sociales/Twitter-icon.png" alt="Twitter">
+                    </a>
+                </li>
+                <li>
+                    <a>
+                        <img src="media/redes sociales/Social-Networks-Instagram-icon.png" alt="Instagram">
+                    </a>
+                </li>
+            </ul>
+            <p class="pt-3">&copy All Rights Reserved</p>
+        </div>
+    </footer>
+    <!--Bootstrap Bundle with Popper-->
+    <script src="./js-boots/bootstrap.bundle.min.js"></script>
+    <!--Lightbox script-->
+    <script src="./js-lb/lightbox-plus-jquery.js"></script>
+</body>
+</html>

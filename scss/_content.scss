@@ -1,0 +1,206 @@
+body{
+    background-color: $bg-lightBeige;
+    font-family: $fontMain;
+    font-size:$standardFontSize
+}
+h1{
+    color: $bg-darkSalmon;
+    font-size: $fontTitle;
+    font-weight: $fontBold;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+h2{
+    @extend h1;
+    font-size:$fontTitle - 0.3rem;
+}
+.blackBackground{
+    background-color: $bg-black;
+}
+.boldLetters{
+    font-weight: $fontBold;
+}
+.lightLetters{
+    font-weight: $fontThin;
+}
+.textCenter{
+    text-align: center;
+}
+#firstBar{
+    padding:0.5rem;
+}
+
+/*First search bar*/
+.cartButton{
+    background-color: black;
+    border: none;
+}
+/*End first search bar*/
+
+/*Home*/
+.headerHome{
+    display:flex;
+    justify-content: center;
+    padding-top: 2rem;
+    &__video{
+        width: 25rem;
+    }
+}
+.articleHome{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    &__img{
+        width: 20rem;
+    }
+}
+.articleHome p{
+    font-size: 1.2rem;
+    font-weight:bold;
+}
+.sectionHome div{
+    padding-top: 2rem;
+}
+#logoHome{
+    display: flex;
+    justify-content: center;
+    margin-top:1rem;
+}
+/*end Home*/
+
+/*About Us*/
+.sectionAboutUs{
+    display: flex;
+    justify-content:center;
+}
+.articleAboutUs{
+    padding-top: 30px;
+    padding-bottom: 20px;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    &__content{
+        p{
+            font-weight: $fontBold;
+        }
+    }
+    &__img{
+        margin-top: 2rem;
+        & img{
+            width: 16rem;
+        }
+    }
+}
+/*end About Us*/
+
+/*Cats and Dogs Sections*/
+.picturesSection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+    margin: auto;
+    &__img{
+        width: 300px;
+    }
+}
+.headerProd{
+    display:flex;
+    justify-content: center;
+    margin-top: 20px;
+    img{
+        width:90%;
+        object-fit: cover;
+    }
+}
+.marginBottomStandard{
+    margin-bottom: 1rem;
+}
+.scaleImage:hover{
+    transform:scale(1.05);
+    cursor:pointer;
+    transition:all .4s;
+}
+.prodBack{
+    background-color: $bg-white;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    font-weight: 2*$fontThin;
+    color:$bg-darkSalmon;
+    text-align: center;
+    border-radius: 0.5rem;
+}
+.bigProdLetters{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+.borderRadius{
+    border-radius: 0.3rem;
+}
+/*end Cats and Dogs Sections*/
+
+/*FAQs Section*/
+.accordion-button:not(.collapsed){
+    color: $bg-darkSalmon;
+    font-weight: $fontBold;
+    background-color:rgb(255, 255, 255);
+}
+#headerFaq{
+    width:15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*end FAQs Section*/
+
+/*Form Section*/
+.sectionForm{
+    padding: 2rem;
+    background-image: url(../media/fotos/cat-dog-background.jpg);
+    width:90%;
+    margin:auto;
+    margin-bottom:2rem;
+}
+.sectionForm div{
+    display: flex;
+    justify-content: center;
+}
+.sectionForm__map{
+    border:groove;
+}
+.map{
+    width: 30rem;
+}
+#formSection{
+    @include m(2rem,1rem,2rem,1rem);
+    padding:1rem;
+    border-style:ridge;
+    border-radius: 0.5rem;
+    background-color:rgba(240, 201, 188, 0.582);
+    width: 20rem;
+}
+#sumbitButton{
+    width: 5rem;
+}
+/*end Form Section*/
+
+/*404 page*/
+#header404 h1{
+    font-size:3rem;
+    margin-top: 2rem;
+}
+#header404 p{
+    font-size: 1.5rem;
+    font-weight:bold;
+}
+#button404 a{
+    text-decoration: none;
+    font-weight: bold;
+    color:black;
+}
+.btn-secondary{
+    background-color: rgb(167, 167, 167);
+}
+/*end 404 page*/
