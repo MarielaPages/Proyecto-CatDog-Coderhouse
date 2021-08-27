@@ -143,15 +143,18 @@ h2{
 
 /*FAQs Section*/
 .accordion-button:not(.collapsed){
-    color: $bg-darkSalmon;
-    font-weight: $fontBold;
-    background-color:rgb(255, 255, 255);
+    color: black;
+    background-color: rgb(248, 242, 221);
 }
 #headerFaq{
     width:15%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+#faqs h3{
+    font-weight: $fontBold;
+    font-size: 1.5rem;
 }
 /*end FAQs Section*/
 
@@ -179,7 +182,7 @@ h2{
     border-style:ridge;
     border-radius: 0.5rem;
     background-color:rgba(240, 201, 188, 0.582);
-    width: 20rem;
+    width: 30rem;
 }
 #sumbitButton{
     width: 5rem;

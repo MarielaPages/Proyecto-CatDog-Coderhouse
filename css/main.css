@@ -147,15 +147,18 @@ h2 {
 /*end Cats and Dogs Sections*/
 /*FAQs Section*/
 .accordion-button:not(.collapsed) {
-  color: darksalmon;
-  font-weight: bold;
-  background-color: white; }
+  color: black;
+  background-color: #f8f2dd; }
 
 #headerFaq {
   width: 15%;
   display: flex;
   justify-content: center;
   align-items: center; }
+
+#faqs h3 {
+  font-weight: bold;
+  font-size: 1.5rem; }
 
 /*end FAQs Section*/
 /*Form Section*/
@@ -185,7 +188,7 @@ h2 {
   border-style: ridge;
   border-radius: 0.5rem;
   background-color: rgba(240, 201, 188, 0.582);
-  width: 20rem; }
+  width: 30rem; }
 
 #sumbitButton {
   width: 5rem; }
@@ -254,8 +257,7 @@ footer {
   .picturesSection__img {
     width: 350px; }
   #formSection {
-    padding-right: 1rem;
-    width: 30rem; } }
+    padding-right: 1rem; } }
 
 @media only screen and (min-width: 1024px) {
   #logoHome {
