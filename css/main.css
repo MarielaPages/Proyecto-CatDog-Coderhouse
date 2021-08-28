@@ -179,11 +179,11 @@ h2 {
 .map {
   width: 30rem; }
 
-#formSection {
+#form {
   margin-top: 2rem;
-  margin-right: 1rem;
+  margin-right: 0rem;
   margin-bottom: 2rem;
-  margin-left: 1rem;
+  margin-left: 0rem;
   padding: 1rem;
   border-style: ridge;
   border-radius: 0.5rem;
@@ -256,7 +256,7 @@ footer {
     object-fit: unset; }
   .picturesSection__img {
     width: 350px; }
-  #formSection {
+  #form {
     padding-right: 1rem; } }
 
 @media only screen and (min-width: 1024px) {

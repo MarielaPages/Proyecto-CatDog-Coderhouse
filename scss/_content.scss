@@ -176,8 +176,8 @@ h2{
 .map{
     width: 30rem;
 }
-#formSection{
-    @include m(2rem,1rem,2rem,1rem);
+#form{
+    @include m(2rem,0rem,2rem,0rem);
     padding:1rem;
     border-style:ridge;
     border-radius: 0.5rem;
