@@ -16,9 +16,21 @@ footer{
         list-style-type: none;
         margin: 5px;
     }
+    a{
+        text-decoration: none;
+    }
     p{
         text-align: center;
         font-weight: bold;
     }
+    i{
+        font-size: 1.6rem;
+        color:black;
+        background-color: $bg-mustard;
+    }
+}
+.icofont-facebook{
+    color:$bg-mustard;
+    background-color: black;
 }
 /*end Footer*/

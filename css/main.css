@@ -228,9 +228,19 @@ footer {
   footer li {
     list-style-type: none;
     margin: 5px; }
+  footer a {
+    text-decoration: none; }
   footer p {
     text-align: center;
     font-weight: bold; }
+  footer i {
+    font-size: 1.6rem;
+    color: black;
+    background-color: #f3eac8; }
+
+.icofont-facebook {
+  color: #f3eac8;
+  background-color: black; }
 
 /*end Footer*/
 @media only screen and (min-width: 680px) {
