@@ -66,12 +66,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   width: 70%; }
+  .articleHome p {
+    font-size: 1.2rem;
+    font-weight: bold; }
   .articleHome__img {
     width: 20rem; }
-
-.articleHome p {
-  font-size: 1.2rem;
-  font-weight: bold; }
 
 .sectionHome div {
   padding-top: 2rem; }
@@ -168,13 +167,11 @@ h2 {
   width: 90%;
   margin: auto;
   margin-bottom: 2rem; }
-
-.sectionForm div {
-  display: flex;
-  justify-content: center; }
-
-.sectionForm__map {
-  border: groove; }
+  .sectionForm div {
+    display: flex;
+    justify-content: center; }
+  .sectionForm__map {
+    border: groove; }
 
 .map {
   width: 30rem; }
